@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/*Color Pallete*/
+:root {
+    --black     : #000;
+    --red       : #ff0000;
+    --dark-red  : #800000;
+    --font-sangar : 'Staatliches', cursive;
+    --font-biasa : 'Anek Malayalam', sans-serif;
+}
+
+/* ================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-biasa);
+}
+
+section {
+    min-height: 100vh;
+    padding: 4em 0 0;
+}
+
+.separator {
+    height: 2px;
+    width: 20px;
+    background-color: #ff0000;
+}
+
+/* ================================= */
+
+/*================= CSS For ALL HEADER ================= */
+
+header {
+    font-weight: bold;
+}
+
+header .navbar {
+    transition: top 0.5s;
+}
+
+header .navbar-toggler {
+    outline: none !important;
+    border: none !important;
+}
+
+header .nav-link {
+    color: white !important;
+}
+
+header .navbar-brand {
+    width: 75%;
+}
+
+header .navbar-brand img {
+    width: 15%;
+}
+
+header .nav-item {
+    padding: 0 0.5em;
+}
+
+header .nav-item a {
+    font-size: 18px;
+}
+
+header .nav-item .active {
+    text-shadow: 0 0 15px var(--red), 0 0 25px var(--red);
+    background-color: transparent;
+}
+
+header .nav-text,
+header .nav-link:hover,
+header .dropdown-item:hover {
+    color: var(--red) !important;
+    background-color: transparent;
+}
+
+header .dropdown:hover .dropdown-menu {
+    display: block;
+    border: none;
+}
+
+header .dropdown a {
+    color: white;
+    font-weight: bold;
+}
+
+header .float-widget {
+    bottom: unset;
+    top: 0;
+    width: auto;
+    z-index: 9999;
+    right: -90px;
+    transform-origin: right 100%;
+    transform: rotate(-90deg);
+}
+
+header .float-widget:hover {
+    right: -80px;
+    transition: right 100ms;
+}
+
+header .float-widget:not(hover) {
+    transition: 100ms;
+}
+
+header .float-button {
+    border-radius: 5px;
+    border: 0 var(--red) solid;
+    background: var(--red);
+    width: 100%;
+    padding: 10px 10px 100px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+header .float-widget a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ================================= */
+
+/*================= CSS For ALL FOOTER ================= */
+
+footer {
+    background-color:   var(--black);
+}
+
+footer * {
+    color: white;
+}
+
+footer h5 {
+    font-family: var(--font-sangar);
+    text-transform: uppercase;
+}
+
+footer .site-link li, .sosmed-widget li {
+    list-style: none;
+}
+
+footer .site-link li a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .site-link li a:hover,
+footer .sosmed-widget li i:hover {
+    color: var(--red);
+    transition: color 500ms;
+}
+
+footer .sosmed-widget li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+footer .btn {
+    background-color: var(--dark-red);
+}
+
+footer .btn:hover {
+    background-color: var(--red);
+    transition: background-color 500ms;
+}
+
+footer .copyright a{
+    text-decoration: none;
+    cursor: default;
+    font-size: small;
+}
+
+/* ================================= */
+
+/*================= CSS For HOME PAGE ================= */
+
+section.home {
+    background-image: url("../assets/img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 0 !important;
+}
+
+section.home > div {
+    height: 100vh;
+    width: 100vw;
+}
+
+section.home h1 {
+    font-family: 'Staatliches', cursive !important;
+    font-weight: bold;
+    background-color: white;
+    color: var(--black);
+    font-size: 40px;
+}
+
+section.home h1 > span {
+    color:  var(--red);
+}
+
+section.home .logo > img {
+    height: auto;
+    width: 30%;
+}
+
+section.home .btn {
+    font-family: var(--font-sangar);
+    background-color: var(--red);
+    color: white;
+}
+
+section.home .btn:hover {
+    color: var(--red);
+    box-shadow: inset 8em 0 0 0 #fff;
+    transition-duration: 600ms;
+}
+
+section.home .btn:not(hover) {
+    transition-duration: 600ms;
+}
+
+section.home .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+section.facilities {
+    margin-top: -150px;
+    min-height: 100vh;
+    height: max-content;
+}
+
+section.facilities .row  div {
+    padding: 0.5em;
+}
+
+section.facilities .box {
+    padding-top: 2em !important;
+    background-color: white;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    min-height: 100%;
+}
+
+section.facilities .box:hover{
+    box-shadow: 0 0 5px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px rgb(163, 163, 163);
+}
+
+section.facilities h4 {
+    font-family: var(--font-sangar);
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+section.facilities .box p {
+    line-height: 1.7em;
+    padding: 0 2em;
+    text-align: justify;
+    font-size: 14px
+}
+
+section.facilities .box img {
+    height: 100%;
+    max-height: 62px;
+}
+
+section.banner {
+    margin-top: -50px;
+    background-image: url("../assets/img/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ================================= */
+
+/*================= CSS For JOIN PAGE ================= */
+/*=============== And Some Contact Page =============== */
+
+section.join-bg {
+    background-image: url("../assets/img/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: -250px;
+}
+
+section.join-bg > div {
+    font-family: var(--font-sangar);
+    width: 100vw;
+    height: 100vh;
+}
+
+section.join-bg > div h1 {
+    color: var(--black);
+    background-color: white;
+    margin-top: 2em;
+    font-size: 50px;
+}
+
+section.join-bg > div h1 > span {
+    color: var(--red);
+}
+
+section.join-form {
+    margin-bottom: 10em;
+}
+
+section.join-form > .container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d2d1d1, 0 0 15px #e9e9e9;
+    padding: 5em 0 13em;
+    margin-top: -100px;
+}
+
+section.join-form h1 {
+    font-family: var(--font-sangar);
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--dark-red);
+}
+
+section.join-form h1 span {
+    color: var(--black);
+}
+
+section.join-form .form-input,
+section.contact-form .form-input {
+    width: 50%;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+section.join-form .form-input > input,
+section.join-form .form-selector > select,
+section.contact-form .form-input > input,
+section.contact-form .form-selector > select {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px var(--dark-red) solid;
+    display: block;
+    padding: 0.3em 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+section.join-form .form-selector > select,
+section.contact-form .form-selector > select {
+    border: 2px var(--dark-red) solid;
+}
+
+section.join-form .form-selector > select:focus,
+section.contact-form .form-selector > select:focus {
+    border-color: var(--red);
+}
+
+section.join-form .form-input > input:focus,
+section.join-form .form-input > input:valid,
+section.contact-form .form-input > input:focus,
+section.contact-form .form-input > input:valid {
+    outline: 0;
+    border-bottom-color: var(--red) ;
+}
+
+section.join-form .form-input > label,
+section.contact-form .form-input > label {
+    font-family: var(--font-sangar);
+    color: var(--dark-red);
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+}
+
+section.join-form .form-selector > label,
+section.contact-form .form-selector > label,
+section.contact-form .form-message > label {
+    font-family: var(--font-sangar);
+    color: var(--dark-red);
+    margin-bottom: 1em;
+}
+
+section.join-form .form-input > input:focus + label,
+section.join-form .form-input > input:valid + label,
+section.contact-form .form-input > input:focus + label,
+section.contact-form .form-input > input:valid + label {
+    transform: translateY(-40px);
+    transition: transform 500ms ease;
+}
+
+section.join-form .form-input > input:not(focus) + label,
+section.contact-form .form-input > input:not(focus) + label {
+    transform: translateY(0px);
+    transition: transform 500ms ease-out;
+}
+
+section.join-form .form-check-input,
+section.contact-form .form-check-input {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: var(--dark-red);
+}
+
+section.join-form .submit,
+section.contact-form .submit {
+    position: relative;
+}
+
+section.join-form .submit button,
+section.contact-form .submit button {
+    position: absolute;
+    right: -2.6em;
+    top: 5em;
+    transform: translate(-50%, -50%);
+    color: var(--dark-red);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 2px solid var(--dark-red);
+    transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+section.join-form .submit button::before,
+section.contact-form .submit button::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--dark-red);
+    transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+    z-index: -1;
+}
+
+section.join-form .submit button::after,
+section.contact-form .submit button::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/icon/right-arrow.png");
+    position: absolute;
+    top: 0;
+    left: calc(100% - 3em);
+    right: 3em;
+    bottom: 0;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+section.join-form .submit button:hover,
+section.contact-form .submit button:hover {
+    padding: 0.5em 3.5em 0.5em 0.5em;
+    background-color: var(--dark-red);
+    color: white;
+}
+
+section.join-form .submit button:hover::before,
+section.contact-form .submit button:hover::before {
+    left: calc(100% - 3em);
+    right: 0;
+    transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+section.join-form .submit button:hover::after,
+section.contact-form .submit button:hover::after {
+    right: 0;
+    transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+/* ================================= */
+
+/*================= CSS For CONTACT PAGE ================= */
+
+section.contact-bg {
+    background-image: url("../assets/img/bg5.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: -250px;
+}
+
+section.contact-bg > div {
+    font-family: var(--font-sangar);
+    font-weight: bold;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.contact-bg > div h1 {
+    color: var(--black);
+    background-color: white;
+    margin-top: 2em;
+    font-size: 50px;
+}
+
+section.contact-bg > div h1 > span{
+    color: var(--red);
+}
+
+section.contact-form h4 {
+    font-family: var(--font-sangar);
+    color: var(--dark-red);
+    font-size: 32px;
+}
+
+section.contact-form h4 > span {
+    color: var(--black);
+}
+
+section.contact-form .form-message textarea {
+    outline: none;
+    border: 2px var(--dark-red) solid;
+    padding: 5px;
+    font-size: 18px;
+}
+
+section.contact-form .form-message textarea:focus {
+    border-color: var(--red);
+}
+
+section.contact-other .box  a{
+    text-decoration: none;
+    color: var(--dark-red);
+}
+
+section.contact-other .box  a:hover{
+    color: var(--red);
+}
+
+section.contact-other .box {
+    border: none;
+    box-shadow: 0 0 10px #e9e9e9;
+    min-height: 100%;
+}
+
+section.contact-other .box:hover {
+    box-shadow: 0 0 15px #e9e9e9;
+}
+
+/* ================================= */
+
+/*================= CSS For ABOUT PAGE ================= */
+
+section.about-bg {
+    background-image: url("../assets/img/bg4.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: -250px;
+}
+
+section.about-bg > div {
+    font-family: var(--font-sangar);
+    font-weight: bold;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.about-bg > div h1 {
+    color: var(--black);
+    background-color: white;
+    margin-top: 2em;
+    font-size: 50px;
+}
+
+section.about-bg > div h1 > span,
+section.about-content h4 > span {
+    color: var(--red);
+}
+
+section.about-bg h4 {
+    color: white;
+    font-size: 32px;
+}
+
+section.about-content .mobile {
+    display: none;
+}
+
+section.about-content h4 {
+    font-family: var(--font-sangar);
+}
+
+section.about-content > .container img {
+    width: 100%;
+}
+
+/* ================================= */
+
+/*================= CSS For CLUBS PAGE ================= */
+
+section.clubs-bg {
+    background-image: url("../assets/img/bg6.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: -250px;
+}
+
+section.clubs-bg > div {
+    font-family: var(--font-sangar);
+    width: 100vw;
+    height: 100vh;
+}
+
+section.clubs-bg > div h1 {
+    color: var(--black);
+    background-color: white;
+    margin-top: 2em;
+    font-size: 50px;
+}
+
+section.clubs-bg > div h1 > span {
+    color: var(--red);
+}
+
+section.clubs-content h4{
+    font-size: 34px;
+    font-family: var(--font-sangar);
+    color: var(--dark-red);
+    text-align: center;
+}
+
+section.clubs-content h4 > span{
+    color: var(--black);
+}
+
+
+section.clubs-content .box {
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 10px #e9e9e9, 0 0 20px #e9e9e9;
+}
+
+section.clubs-content .box a {
+    text-decoration: none;
+    color: var(--dark-red);
+}
+
+section.clubs-content .box a:hover {
+    color: var(--red);
+}
+
+section.clubs-content .container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #e9e9e9;
+    margin-top: -100px;
+}
+
+section.clubs-content .city-image {
+    padding-top: 30%;
+    text-align: center;
+    border-radius: 5px;
+    background-position: center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    transition: background-size 500ms ease;
+}
+
+section.clubs-content .city-image:hover {
+    background-size: 150%;
+}
+
+section.clubs-content .city-image a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+/* ================================= */
+
+
+
+
+/*================= CSS For Mobile Version ================= */
+
+@media only screen and (max-width: 764px){
+
+    /*================= HEADER AND FOOTER ================= */
+
+    header .navbar-brand img {
+        width: 30%;
+    }
+
+    header .float-widget {
+        display: none;
+    }
+
+    footer .site-link li {
+        border-bottom: 1px dotted #e9e9e9;
+    }
+
+    footer .site-link li a {
+        font-size: 16px;
+    }
+
+    footer .separator {
+        display: none;
+    }
+
+    /* ================================= */
+
+    /*================= HOME PAGE ================= */
+
+    section.home .logo > img {
+        height: auto;
+        width: 60%;
+    }
+
+    section.home h1 {
+        font-size: 32px;
+    }
+
+    /* ================================= */
+
+    /*================= JOIN PAGE ================= */
+
+    section.join-bg h1 {
+        font-size: 36px !important;
+        font-weight: bold;
+    }
+
+    section.join-form h1 {
+        font-size: 26px;
+    }
+
+    section.join-form .form-input,
+    section.contact-form .form-input {
+        width: 100%;
+    }
+
+    section.join-form .form-input input,
+    section.contact-form .form-input input {
+        font-size: medium;
+    }
+
+    section.join-form .form-check-label {
+        font-size: 14px;
+    }
+
+    /* ================================= */
+
+    /*================= ABOUT PAGE ================= */
+
+    section.about-content .mobile {
+        display: block;
+    }
+
+    section.about-content .desktop {
+        display: none;
+    }
+
+    /* ================================= */
+
+    /*================= Contact PAGE ================= */
+
+    section.contact-bg h1 {
+        font-size: 38px !important;
+    }
+
+    /* ================================= */
+    
+}
+
+/*================= END For Mobile Version ================= */
