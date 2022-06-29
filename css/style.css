@@ -689,6 +689,42 @@ section.clubs-content .city-image a{
 
 /*================= CSS For Mobile Version ================= */
 
+@media only screen and (max-width: 1024px){
+    header .float-widget {
+        top: 20%;
+    }
+
+    footer .separator {
+        display: none;
+    }
+
+    /*================= ABOUT PAGE ================= */
+
+    section.about-content .mobile {
+        display: block;
+    }
+
+    section.about-content .desktop {
+        display: none;
+    }
+
+    /*================= Contact PAGE ================= */
+
+    section.join-form {
+        min-height: max-content;
+    }
+
+    /*================= Contact PAGE ================= */
+
+    section.contact-form {
+        min-height: max-content;
+    }
+
+    section.contact-other {
+        min-height: 30vh !important;
+    }
+}
+
 @media only screen and (max-width: 764px){
 
     /*================= HEADER AND FOOTER ================= */
