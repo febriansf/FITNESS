@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@font-face {
+    font-family: 'Anek Malayalam';
+    src: url(../assets/fonts/AnekMalayalam-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url(../assets/fonts/Staatliches-Regular.ttf);
+}
 
 /*Color Pallete*/
 :root {
     --black     : #000;
     --red       : #ff0000;
     --dark-red  : #800000;
-    --font-sangar : 'Staatliches', cursive;
+    --font-sangar : 'Staatliches', Arial;
     --font-biasa : 'Anek Malayalam', sans-serif;
 }
 
