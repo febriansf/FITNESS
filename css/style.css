@@ -685,9 +685,7 @@ section.clubs-content .city-image a{
 /* ================================= */
 
 
-
-
-/*================= CSS For Mobile Version ================= */
+/*================= CSS For Tablet Version ================= */
 
 @media only screen and (max-width: 1024px){
     header .float-widget {
@@ -708,7 +706,7 @@ section.clubs-content .city-image a{
         display: none;
     }
 
-    /*================= Contact PAGE ================= */
+    /*================= Join PAGE ================= */
 
     section.join-form {
         min-height: max-content;
@@ -724,6 +722,8 @@ section.clubs-content .city-image a{
         min-height: 30vh !important;
     }
 }
+
+/*================= CSS For Mobile Version ================= */
 
 @media only screen and (max-width: 764px){
 
