@@ -7,7 +7,9 @@ $(function() {
         if (prevScrollPos > currentScrollPos) {
             $('#navbar').css({'top':'0'});
         } else {
-            $('#navbar').css({'top':'-90px'});
+            if (prevScrollPos > 100) {
+                $('#navbar').css({'top':'-90px'});
+            }
         }
         prevScrollPos = currentScrollPos;
     });
