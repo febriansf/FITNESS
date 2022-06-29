@@ -659,7 +659,6 @@ section.clubs-content .container {
 }
 
 section.clubs-content .city-image {
-    padding-top: 30%;
     text-align: center;
     border-radius: 5px;
     background-position: center;
@@ -674,6 +673,7 @@ section.clubs-content .city-image:hover {
 }
 
 section.clubs-content .city-image a{
+    margin-top: 50%;
     text-decoration: none;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
