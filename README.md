@@ -1,6 +1,6 @@
 # UAS-DesainWeb
 
-https://ferbiansf.github.io/FITNESS
+https://febriansf.github.io/FITNESS/
 
 ## Status = *On Going*
 
