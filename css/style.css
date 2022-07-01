@@ -91,11 +91,6 @@ header .dropdown-item:hover {
     background-color: transparent;
 }
 
-header .dropdown:hover .dropdown-menu {
-    display: block;
-    border: none;
-}
-
 header .dropdown a {
     color: white;
     font-weight: bold;
