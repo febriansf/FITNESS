@@ -29,8 +29,8 @@ $(function() {
 });
 
 //Function for Show Modal when submit Join registration
-$('#registration').on('submit', function(e) {
-    e.preventDefault(); //stop submit
+$('#registration').submit(function(e) {
+    e.preventDefault();
     
     if ($('#checkbox').is(':checked')) {
     $('#modelId').modal('show');
@@ -40,12 +40,19 @@ $('#registration').on('submit', function(e) {
 });
 
 //Same as above but this is for Message Form cuz idk how to write a code :v
-$('#message').on('submit', function(e) {
-    e.preventDefault(); //stop submit
+$('#message').submit(function(e) {
+    e.preventDefault();
     
     if ($('#checkbox').is(':checked')) {
-    $('#modelId').modal('show');
+    $('main #modelId').modal('show');
     }
 
     $(this)[0].reset();
+});
+
+//Same as above but this is for subscribe mail :v
+$('#subscribe-form').submit(function (e) { 
+    e.preventDefault();
+    $('footer .form-control').val("");
+    $('footer #modelId').modal('show');
 });

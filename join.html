@@ -116,7 +116,6 @@
                 </form>
             </div>
         </section>
-    </main>
 
         <!-- Modal -->
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
@@ -135,64 +134,86 @@
                 </div>
             </div>
         </div>
+    </main>
 
-        <footer class="pt-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-5 site-link">
-                        <h5>Tautan Link</h5>
-                        <div class="separator mb-3"></div>
-                        <ul class="ps-0">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="clubs.html">FITNESS Clubs</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="join.html">Join</a></li>
-                        </ul>
+    <footer class="pt-4">
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-black">Terimakasih Telah Berlangganan!</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-7">
-                        <h5>Temukan Kami Di</h5>
-                        <div class="separator mb-3"></div>
-                        <div class="sosmed-widget">
-                            <ul class="ps-0">
-                                <li>
-                                    <a href="https://twitter.com" target="_blank">
-                                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://facebook.com" target="_blank">
-                                        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://instagram.com" target="_blank">
-                                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com" target="_blank">
-                                        <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="modal-body">
+                        <p class="text-black">Silahkan Periksa Kotak Masuk Email Anda!</p>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-12 pt-lg-0 pt-3 pb-3 text-lg-start text-center">
-                        <h5>Dapatkan Update Promo Menarik Lainnya</h5>
-                        <div class="separator mb-3"></div>
-                        <div class="mb-3 d-inline-flex">
-                            <input type="email" class="form-control" aria-describedby="emailHelpId" placeholder="Masukkan Email...">
-                            <div class="p-1"></div>
-                            <a class="btn" href="#" role="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-white" style="background-color: var(--dark-red);" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-            <div class="bg-dark align-content-center p-1 text-center copyright">
-                <a href="https://ptik.fkip.uns.ac.id"><i class="fa fa-copyright fa-1x" aria-hidden="true"></i> Pendidikan Teknik Informatika dan Komputer 2021</a></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-5 site-link">
+                    <h5>Tautan Link</h5>
+                    <div class="separator mb-3"></div>
+                    <ul class="ps-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="clubs.html">FITNESS Clubs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-7">
+                    <h5>Temukan Kami Di</h5>
+                    <div class="separator mb-3"></div>
+                    <div class="sosmed-widget">
+                        <ul class="ps-0">
+                            <li>
+                                <a href="https://twitter.com" target="_blank">
+                                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com" target="_blank">
+                                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com" target="_blank">
+                                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtube.com" target="_blank">
+                                    <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 pt-lg-0 pt-3 pb-3 text-lg-start text-center">
+                    <h5>Dapatkan Update Promo Menarik Lainnya</h5>
+                    <div class="separator mb-3"></div>
+                    <form action="" id="subscribe-form">
+                        <div class="mb-3 d-inline-flex">
+                            <input type="email" class="form-control" aria-describedby="emailHelpId" placeholder="Masukkan Email..." required>
+                            <div class="p-1"></div>
+                            <button class="btn" type="submit">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </footer>
+        </div>
+        <div class="bg-dark align-content-center p-1 text-center copyright">
+            <a href="https://ptik.fkip.uns.ac.id"><i class="fa fa-copyright fa-1x" aria-hidden="true"></i> Pendidikan Teknik Informatika dan Komputer 2021</a></i>
+        </div>
+    </footer>
 
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
