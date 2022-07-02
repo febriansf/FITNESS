@@ -28,6 +28,16 @@ $(function() {
     });
 });
 
+//Show dropdown menu while hovering dropdown-toggler
+$(function() { 
+    if ($('.navbar-toggler').is(":hidden")) {
+        $('.dropdown').hover(function(){
+            $(this).toggleClass("show");
+            $('.dropdown-menu').toggleClass("show");
+        });
+    }
+});
+
 //Function for Show Modal when submit Join registration
 $('#registration').submit(function(e) {
     e.preventDefault();
