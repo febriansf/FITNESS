@@ -2,6 +2,6 @@
 
 https://febriansf.github.io/FITNESS/
 
-## Status = *FInsihed*
+## Status = *Finsihed*
            
 *Note : Tinggalkan pesan jika melakukan perubahan pada repository ini*
